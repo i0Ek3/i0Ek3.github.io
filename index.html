@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+  <h2 class="heading">Study</h2>
+  <ul class="list list-items">
+    <li>
+      XXX, Computer Application Technology.</li>
+      <div class="small">Research in what I interesting.</div>
+    </li>
+  </ul>
+
+  <h2 class="heading">Work</h2>
+  <ul class="list list-items">
+    <li>Privacy.</li>
+  </ul>
+  
+  <h2 class="heading">Side Projects</h2>
+  <ul class="list list-items">
+      <li><a href="https://github.com/alphalgo/regnidorhcs">The reverse of the word Schrodinger, which means we need certainty instead of uncertainty.</a></li>
+      <li><a href="https://github.com/alphalgo/openstack">Openstack is an expanded data structure for stack.</a></li>
+      <li><a href="https://github.com/alphalgo/openqueue">Openqueue is an expanded data structure for queue.</a></li>
+      <li><a href="https://github.com/i0Ek3/IACM">IACM is a blockchain consensus write by Go.</a></li>
+      <li><a href="https://github.com/i0Ek3/HPS">HPS: A High Performance Server written by C++11 .</a></li>
+      <li><a href="https://github.com/i0Ek3/TinyOne">TinyOne: A tiny FTP server.</a></li>
+      <li><a href="https://github.com/i0Ek3/m4">m4: A tiny container hybird programming by C & C++.</a></li>
+      <li><a href="https://github.com/i0Ek3/i0sh">i0sh: A Linux Shell write in C.</a></li>
+      <li><a href="https://github.com/i0Ek3/echo-demo">echo-demo: An echo server for TCP/UDP .</a></li>
+      <li><a href="https://github.com/i0Ek3/Hackintosh_4_Hasee_Shinelon_A40L">Hackintosh on Shinelon A40L.</a></li>
+      <li><a href="https://github.com/i0Ek3/awesome-architect">Backend architenctor skill map with C/C++.</a></li>
+      <li><a href="https://github.com/i0Ek3">Click me to know more about information.</a></li>
+  </ul>
+
+  <h2 class="heading">About me</h2>
+  <ul class="list list-items">
+    <li>Based in Beijing since 2020.</li>
+    <li>Work in C/C++/Go/Shell, a Vimer.</li>
+    <li>A back-end developer.</li>
+    <li>Fake full-stack developer, you know, I don't know anything.</li>
+    <li>Loves cooking, loves music, loves fitness.</li>
+    <li>Actually, I played music production many years ago. That's really cool~</li>
+    <li>Lifelong learner.</li>
+    <li>French, Russia, Esperanto, Spanish, Mongolian learning...</li>
+    <li>Oh, I am a fat man.</li>
+  </ul>
+
+  <h2 class="heading">Hyperlinks &amp; contact</h2>
+  <ul class="list list-items">
+    <li>
+      <mark><a href="https://github.com/i0Ek3" rel="me">GitHub</a></mark>
+    </li>
+    <li>Telegram: ZW8weGZmCg==</li>
+    <li>P: aTBFazNAcHJvdG9ubWFpbC5jb20K</li>
+    <li>G: a25vMzA4MjYjZ21haWwuY29tCg==</li>
+    <li>Phone: KzEgOTc4MjcyMjAyNgo=</li>
+  </ul>
+  
+  <h2 class="heading">Posts</h2><a class="small" href="/notes.xml">[feed]</a>
+  <ul class="list-notes">
+    {% for note in site.data.notes limit: 5 %}
+      <li class="note">
+        <time class="small">{{ note.date | date: "%b %d, %Y" }}</time> <a href="/notes#date-{{ note.date | date: "%Y-%m-%d" }}{{ note.slug }}" class="small">#</a>
+        <div>{{ note.content | markdownify }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+
+{% if site.data.notes.size > 5 %}
+  <li class="note"><a class="small" href="/notes">More...</a></li>
+{% endif %}
+
