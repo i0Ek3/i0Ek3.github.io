@@ -4,7 +4,5 @@
 
 Blog cloned and modified from [muan](https://github.com/muan), so beautiful and awesome.
 
-If you want to use it, due to Muan’s statement, please delete the corresponding folder:  `_posts/` and `images/`.
-
-Enjoy~
+Due to Muan’s statement, I deleted the original folder `_posts/` and `images/` in this repo. Enjoy~
 
